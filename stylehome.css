@@ -20,7 +20,8 @@ header {
     height: 100px;
 }
 .sublogo img {
-    max-width: 300px;
+    max-width: 250px;
+    margin-top: 13px;
 }
 .menu {
     display: flex;
