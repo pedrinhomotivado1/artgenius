@@ -1,0 +1,431 @@
+* {font-family: arial;}
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;    
+}
+.logo img {
+    height: 100px;
+}
+.sublogo img {
+    max-width: 300px;
+}
+.menu {
+    display: flex;
+    align-items: center;    
+}
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    font-family: Arial;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+nav .active a,
+nav a:hover {
+    background-color: cyan;
+    color: white;
+}
+#banner {
+    display: flex;
+    justify-content:center;
+    background-image:url("images/banerapenasolho.png");
+    background-position: center; 
+    background-size:cover;
+    background-color: white;
+    min-height: 500px;
+}
+.column {
+    flex-direction: column;
+}
+.bannerhead {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bannerhead h1 { 
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    margin: 0;
+    padding: 0;
+    max-width: 450px;
+}
+.bannerhead h2 { 
+    font-size: 25px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+.banneroption {    
+    height: 210;
+    display: flex;
+    flex-direction:row;
+}
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+.banner1 {
+    background-color: rgb(51, 136, 136);
+    font-size: 20px;
+}
+.banner2 {
+    background-color: rgb(52, 113, 148);
+    font-size: 20px;
+}
+.banner3 {
+    background-color: rgb(18, 3, 151);
+    font-size: 20px;
+}
+.desc {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banneroption a {
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 5px;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+.b3desc {
+    display: flex;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+}
+
+.widgettitle {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widgettitletext {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.widgettitlebar{
+    width: 50px;
+    height: 2px;
+    background-color:rgb(51, 136, 136);
+    margin-top: 10px;
+}
+.bodybox {
+    display: flex;
+    margin-top: 20px;
+    height: 150px;
+    width: 150px;
+    background-color: rgb(77, 172, 228);
+}
+.widgetbody {
+   display: flex;
+    justify-content: space-between;
+}
+.descmarque {
+   border-bottom: 2px solid rgb(165, 162, 162);
+   padding-bottom: 20px;
+   vertical-align: middle;
+   align-items: center;
+   margin-top: 20px;
+   margin-left: 10px;
+}
+.img {
+   justify-content: center;
+   margin: 5px;
+   padding: 5px;
+   vertical-align: middle;
+   background-color: gray;
+   border-radius: 5px;
+   
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.artigogeral {
+    display: flex;
+}
+article {
+    margin-right: 20px;
+    min-width: 300px;
+    flex: 1;
+}
+article a {
+    text-decoration: none;
+}
+article .newsdata {
+    display: flex;
+}
+article .newsposteddat {
+    background-color: blue;
+    font-size: 12px;
+    color: white;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .newscomments {
+    background-color: darkblue;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+article .thumb img {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+}
+article .newstitle {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: black;
+    font-size: 23px;
+}
+article .newsresume {
+    font-size: 14px;
+    color: black;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+footer {
+    display: flex;
+    background-color: rgb(27, 27, 27);
+    justify-content: center;
+}
+.footermenu {
+    display: flex;
+    flex: 1;
+}
+.fmenu1, .fmenu2, .fmenu3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+}
+.fmenu1 {
+    background-color: rgb(48, 160, 221);
+    font-size: 20px;;
+}
+.fmenu2 {
+    background-color: rgb(2, 110, 192);
+    font-size: 20px;
+}
+.fmenu3 {
+    background-color: rgb(38, 65, 141);
+    font-size: 20px;
+}
+.itemfooter {
+    display: flex;
+    color: white;
+    line-height: 20px;
+}
+.flexcolumn {
+    flex-direction: column;
+}
+.areaitemfooter {
+    flex: 1;
+}
+footer .widgettitletext {
+    color: white;
+}
+.footercopy  {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: gray;
+    font-size: 12px;
+}
+.footermenu a {
+    display: flex;
+    flex: 1;
+    text-decoration: none;
+    line-height: 30px;
+}
+footer .fmenu11 {
+    font-size: 20px;
+    color: white;
+}
+footer .fmenu111 {
+    font-size: 12px;
+    color: white;
+}
+.resumefooterc1 {
+    margin-bottom: 40px;
+}
+.resume2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.resume2 a {
+    text-decoration: none;
+    color: white;
+}
+.link {
+    color: white; 
+}
+.link :hover {
+    color: cyan;
+    text-decoration: underline;  
+}
+.resumeboxtext {
+    display: flex;
+    align-items: baseline;
+}
+.resumetextpost {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+}
+
+.textblue {
+    color: cyan;
+    font-size: 12px;
+    list-style: none;
+    margin-left: 12px;
+    margin-bottom: 30px;
+}
+.icone {
+    display: flex;
+}
+.ic1, .ic2, .ic3, .ic4 {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    background-color: rgb(48,48,48);
+    margin-left: 4px;
+    margin-top: 20px;
+}
+
+@media (max-width:600px) {
+    nav .menumob {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top:40px ;
+        margin-bottom:  40px;
+        margin-right: 20px;
+    }
+    .mmline {
+        background-color: blue;
+        height: 5px;
+        width: auto;
+        margin-top: 2px;
+    }
+    header .logo {
+        margin-left: 20px;
+    }
+    header {
+        height: auto;
+    }
+    header .container  {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: auto;
+        background-color: #FFFF;
+    }
+    nav li {
+        padding: 15px;
+    }
+    #banner {
+        width: auto;
+        background-image: url(../images/bannerresponsivo.jpg);
+        background-size: cover;
+    }
+    .banneroption {
+        flex-direction: column;
+        height: auto;
+    }
+    .bannerhead {
+        padding-top: 150px;
+        margin-bottom: 200px;
+        padding-left: 20px;
+    }
+    .bannerhead h1 {
+        font-size: 50px;
+    }
+    .bannerhead h2 {
+        font-size: 25px;
+    }
+    #geral section {
+        margin-left: 20px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .widgetbody {
+        justify-content: space-around;
+    }
+    .widgettitle {
+        margin-left: 20px;
+    }
+    .descmarque {
+        font-size: 20px;
+    }
+    .footermenu {
+        flex-direction: column;
+    }
+    .areaitemfooter {
+        padding-right: 20px;
+    }
+    .itemfooter {
+        flex-direction: column;
+        padding-left: 20px;
+    }
+    .footercopy {padding-left: 20px;}
+
+
+
+
+
+
+}
