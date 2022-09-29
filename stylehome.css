@@ -19,9 +19,13 @@ header {
 .logo img {
     height: 100px;
 }
+.sublogo {
+    display: flex;
+    align-items: center;
+}
 .sublogo img {
+    
     max-width: 250px;
-    margin-top: 13px;
 }
 .menu {
     display: flex;
@@ -41,12 +45,14 @@ nav a {
     padding: 15px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #727272;
+    color: #fcc52a;
+    border-radius: 4px;
 }
 nav .active a,
 nav a:hover {
-    background-color: cyan;
-    color: white;
+    transition: 1s;
+    background-color: #fcc52a;
+    color: black;
 }
 #banner {
     display: flex;
