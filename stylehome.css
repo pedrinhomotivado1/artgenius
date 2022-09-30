@@ -135,7 +135,7 @@ nav a:hover {
     padding-bottom: 10px;
 }
 #geral {
-    display: none;
+    display: flex;
     justify-content: center;
 }
 #geral section {
@@ -143,6 +143,9 @@ nav a:hover {
 }
 #geral aside {
     flex: 1;
+}
+.sectioniframe {
+    padding-right: 20px;
 }
 
 .widgettitle {
