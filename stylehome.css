@@ -149,8 +149,12 @@ nav a:hover {
 }
 
 .widgettitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 30px;
     margin-bottom: 20px;
+    text-align: center;
 
 }
 .widgettitletext {
@@ -163,6 +167,7 @@ nav a:hover {
     height: 2px;
     background-color:rgb(51, 136, 136);
     margin-top: 10px;
+    margin: auto;
 }
 .bodybox {
     display: flex;
