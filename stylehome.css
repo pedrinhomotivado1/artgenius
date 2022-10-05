@@ -1,6 +1,6 @@
 * {font-family: arial;}
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     margin: 0px;
     padding: 0px;
     color: purple;
@@ -50,7 +50,7 @@ nav a {
     color: #fcc52a;
     border-radius: 4px;
 }
-nav .active a,
+nav .activemenu a,
 nav a:hover {
     transition: 1s;
     background-color: #fcc52a;
@@ -146,6 +146,11 @@ nav a:hover {
 }
 .sectioniframe {
     padding-right: 20px;
+    width: 990px;
+}
+.titlesectionwidget h2 {
+    text-align: center;
+    margin: 20px;
 }
 
 .widgettitle {
@@ -201,54 +206,104 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
 }
-.artigogeral {
-    display: flex;
-}
-article {
-    margin-right: 20px;
-    min-width: 300px;
-    flex: 1;
-}
-article a {
-    text-decoration: none;
-}
-article .newsdata {
-    display: flex;
-}
-article .newsposteddat {
-    background-color: blue;
-    font-size: 12px;
-    color: white;
-    padding: 10px;
-    margin-right: 2px;
-}
-article .newscomments {
-    background-color: darkblue;
-    color: white;
-    font-size: 12px;
-    padding: 10px;
-}
-article .thumb img {
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-}
-article .newstitle {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    color: black;
-    font-size: 23px;
-}
-article .newsresume {
-    font-size: 14px;
-    color: black;
-    line-height: 20px;
-    margin-bottom: 30px;
-}
+/* section slide recents *//*//////////////////////////////////////////*/
+
+            .mySlides {display: none}
+            img {vertical-align: middle;}
+            
+            /* Slideshow container */
+            .slideshow-container {
+              max-width: 700px;
+              position: relative;
+              margin: auto;
+            }
+            
+            /* Next & previous buttons */
+            .prev, .next {
+              cursor: pointer;
+              position: absolute;
+              top: 50%;
+              width: auto;
+              padding: 16px;
+              margin-top: -22px;
+              color: white;
+              font-weight: bold;
+              font-size: 18px;
+              transition: 0.6s ease;
+              border-radius: 0 3px 3px 0;
+              user-select: none;
+            }
+            
+            /* Position the "next button" to the right */
+            .next {
+              right: 0;
+              border-radius: 3px 0 0 3px;
+            }
+            
+            /* On hover, add a black background color with a little bit see-through */
+            .prev:hover, .next:hover {
+              background-color: #fcc52a;
+              color: black;
+            }
+            
+            /* Caption text */
+            .text {
+              color: #f0f0f0;
+              font-size: 15px;
+              margin: auto;
+              position: relative;
+              bottom: 28px;
+              text-align: center;
+            }
+            
+            /* Number text (1/4 etc) */
+            .numbertext {
+              color: #000000;
+              font-size: 14px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+            }
+            
+            /* The dots/bullets/indicators */
+            .dot {
+              cursor: pointer;
+              height: 15px;
+              width: 15px;
+              margin: 0 2px;
+              background-color: #fcc52a;
+              border-radius: 50%;
+              display: inline-block;
+              transition: background-color 0.6s ease;
+            }
+            
+            .active, .dot:hover {
+              background-color: #717171;
+            }
+            
+            /* Fading animation */
+            .fade {
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+            
+            @keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+            
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .prev, .next,.text {font-size: 11px}
+            }
+
+
+
 footer {
     display: flex;
     background-color: rgb(27, 27, 27);
     justify-content: center;
+    margin-top: 20px;
 }
 .footermenu {
     display: flex;
