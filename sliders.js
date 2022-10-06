@@ -1,3 +1,4 @@
+/*/ script do slide completo /*/
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -24,4 +25,17 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-setInterval()
+setInterval(plusSlides(1), 1000)
+
+///////////////// menu areaa///////////////////
+
+function menu() {
+  let menu = document.querySelector('.menuarea')
+  if (menu.classList.contains('opened')=== true) {
+     menu.classList.remove('opened')
+     menu.classList.add('closed')      
+  } else {
+     menu.classList.remove('closed')
+     menu.classList.add('opened')
+  }
+}

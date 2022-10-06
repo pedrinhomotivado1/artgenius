@@ -18,7 +18,7 @@ header {
     width: 990px;    
 }
 .logo img {
-    height: 100px;
+    height: 90px;
 }
 .sublogo {
     display: flex;
@@ -26,7 +26,7 @@ header {
 }
 .sublogo img {
     
-    max-width: 250px;
+    max-width: 220px;
 }
 .menu {
     display: flex;
@@ -43,12 +43,13 @@ nav ul {
 }
 nav a {
     font-family: Arial;
-    padding: 15px;
+    padding: 13px;
     margin: 2px;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: bold;
     color: #fcc52a;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 nav .activemenu a,
 nav a:hover {
@@ -152,7 +153,6 @@ nav a:hover {
     text-align: center;
     margin: 20px;
 }
-
 .widgettitle {
     display: flex;
     flex-direction: column;
@@ -330,6 +330,8 @@ footer {
     display: flex;
     color: white;
     line-height: 20px;
+    flex-direction: column;
+    align-items: center;
 }
 .flexcolumn {
     flex-direction: column;
@@ -402,29 +404,33 @@ footer .fmenu111 {
 }
 .icone {
     display: flex;
+    justify-content: center;
 }
-.ic1, .ic2, .ic3, .ic4 {
-    height: 20px;
-    width: 20px;
-    padding: 5px;
-    background-color: rgb(48,48,48);
-    margin-left: 4px;
-    margin-top: 20px;
+.icone img {
+    width: 25px;
+    margin: 5px 7px;
+}
+.logopeasyfoot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logopeasyfoot img {
+    cursor: pointer;
+    max-width: 100px;
+    height: auto;
 }
 
-@media (max-width:600px) {
-    nav .menumob {
-        width: 40px;
-        height: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-top:40px ;
-        margin-bottom:  40px;
-        margin-right: 20px;
+
+@media (max-width:750px) {
+    .menu {
+        display: none;
     }
+    
     .mmline {
-        background-color: blue;
+        width: 50px;
+        height: 10px;
+        background-color: #fcc52a;
         height: 5px;
         width: auto;
         margin-top: 2px;
@@ -438,21 +444,9 @@ footer .fmenu111 {
     header .container  {
         flex-direction: row;
     }
-    nav ul {
-        flex-direction: column;
-        display: none;
-        position: absolute;
-        left: 0;
-        width: auto;
-        background-color: #FFFF;
-    }
-    nav li {
-        padding: 15px;
-    }
+    
     #banner {
-        width: auto;
-        background-image: url(../images/bannerresponsivo.jpg);
-        background-size: cover;
+        background-image: url(../artgenius/images/banerapenasolho.png);
     }
     .banneroption {
         flex-direction: column;
@@ -494,7 +488,12 @@ footer .fmenu111 {
         flex-direction: column;
         padding-left: 20px;
     }
-    .footercopy {padding-left: 20px;}
+    .footercopy {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        text-align: center;
+    }
 
 
 
