@@ -30,7 +30,7 @@ setInterval(plusSlides(1), 1000)
 ///////////////// menu areaa///////////////////
 
 function menu() {
-  let menu = document.querySelector('.menuarea')
+  let menu = document.querySelector('.areamenugeral')
   if (menu.classList.contains('opened')=== true) {
      menu.classList.remove('opened')
      menu.classList.add('closed')      
