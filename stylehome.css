@@ -472,8 +472,6 @@ footer .fmenu111 {
         flex-direction: column;
         overflow: hidden;
     }
-    .menumobile ul {
-    }
     .menumobile li {
         max-width: 100%;
         background-color: #fcc52a;
