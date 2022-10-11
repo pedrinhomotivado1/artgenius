@@ -317,6 +317,11 @@ footer {
     color: white;
     padding: 20px;
 }
+.iframemap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
 .fmenu1 {
     background-color: rgb(48, 160, 221);
     font-size: 20px;;
@@ -499,7 +504,7 @@ nav a:hover {
         height: 70px;
     }
     .sublogo img {
-        margin-right: 130px;
+        margin-right: 100px;
         margin-left: 20px;
         width: 180px;
     }
@@ -508,7 +513,14 @@ nav a:hover {
     }
     header .container  {
         flex-direction: row;
-    }    
+        justify-content: space-evenly;
+    }
+
+    #banner {
+        background-image: url(../artgenius/images/bannerapenasolhoresponsivo.png);
+        background-size: cover;
+    }
+
     .banneroption {
         flex-direction: column;
         height: auto;
