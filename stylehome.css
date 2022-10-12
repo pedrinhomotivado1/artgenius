@@ -3,7 +3,6 @@ body {
     background-color: rgb(0, 0, 0);
     margin: 0px;
     padding: 0px;
-    color: purple;
     box-sizing: border-box;
 }
 header {
@@ -15,11 +14,13 @@ header {
 }
 .header {
     align-items: center;
+    width: 100%;
+    justify-content: space-around;
 }
 .container {
     display: flex;
-    justify-content: space-between;
-    width: 990px; 
+    max-width: 990px; 
+    margin: auto;
 }
 .logo img {
     height: 90px;
@@ -141,20 +142,19 @@ nav a:hover {
 }
 #geral {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
-#geral section {
-    flex: 2;
-}
-#geral aside {
-    flex: 1;
+.sectionsocialmedia {
+    flex-direction: column;
 }
 .sectioniframe {
-    max-width: 990px;
+    display: block;
+    width: 990px;
 }
 .titlesectionwidget h2 {
     text-align: center;
     margin: 20px;
+    color: #f0f0f0;
 }
 .widgettitle {
     display: flex;
@@ -169,6 +169,9 @@ nav a:hover {
     color: white;
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 .widgettitlebar{
     width: 50px;
@@ -176,6 +179,7 @@ nav a:hover {
     background-color:rgb(51, 136, 136);
     margin-top: 10px;
     margin: auto;
+    margin-bottom: 20px;
 }
 .bodybox {
     display: flex;
@@ -536,6 +540,8 @@ nav a:hover {
     }
     #geral section {
         margin-left: 20px;
+        max-width: 250px;
+        margin-right: 20px;
     }
     .container {
         flex-direction: column;
@@ -548,6 +554,10 @@ nav a:hover {
     }
     .descmarque {
         font-size: 20px;
+    }
+    .iframemap iframe {
+        width: 280px;
+        height: 280px;
     }
     .footermenu {
         flex-direction: column;
