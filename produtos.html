@@ -3,10 +3,12 @@
     <!DOCTYPE html>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width,user-scalable=0" />
-    <title>Art Genius/produtos</title>
+    <title>Art Genius/Ìnicio</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylehome.css"/>
-    <link rel="stylesheet" href="styleprodutos.css">
+    <link rel="stylesheet" href="styleproduct.css">
+    <script src="sliders.js" defer></script>
+    <script src="jsproduct.js"></script>
 
     
 </head>
@@ -19,248 +21,184 @@
             <div class="sublogo">
                 <img src="images/artgeniusnome.png" alt="" srcset="">
             </div>
-            <div class="menu">
-                <nav>
-                    <div class="menumob">
+            <div class="areamenugeral closed">
+                <nav class="menumobile">
+                    <div class="menumob" onclick="menu()">
                         <div class="mmline"></div>
                         <div class="mmline"></div>
                         <div class="mmline"></div>
                     </div>
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li class="active"><a href="produtos.html">PRODUTOS</a></li>
+                        <li ><a href="index.html">HOME</a></li>
+                        <li class="activemenu"><span href="" onmouseover="mousecima()" onmouseout="mousesai()" onclick="clicksubmenu()">PRODUTOS</span></li>
+                        <div class="dropdown dropmenuclosed">
+                            <div class="dropdown-content " onmouseover="mousecima()" onmouseout="mousesai()" onclick="clicksubmenu()">
+                              <a href="produtos.html">wind banner</a>
+                              <a href="produtos.html">Paineis</a>
+                              <a href="produtos.html">acrilicos</a>
+                            </div>
+                        </div>
                         <li><a href="trabalhos.html">TRABALHOS</a></li>
-                        <li><a href="orçamentos.html">ORÇAMENTOS</a></li>                      
+                        <li><a href="orçamentos.html">ORÇAMENTOS</a></li>
                     </ul>
                 </nav>
             </div>
-
+            
         </div>
 
     </header>
 
-    <section class="sectioproductgeral">
-      <div class="titleproduct">
-         <h1>WIND-BANNER</h1>
-      </div>
-      <div class="areaproduct">
-         <div class="areaimage">
-            <img src="../artgenius/images/artgeniusfoto1.jpg" alt="" srcset="">
-         </div>
-         <div class="areaimage">
-            <img src="../artgenius/images/artgeniusfoto3.jpg" alt="" srcset="">
-         </div>
-         <div class="areaimage">
-            <img src="../artgenius/images/artgeniusfoto4.jpg" alt="" srcset="">
-         </div>
-         
-      </div>
-    </section>
-    <section class="sectioproductgeral">
-      <div class="titleproduct">
-         <h1>ENVELOPAMENTO</h1>
-      </div>
-      <div class="areaproduct">
-         <div class="areaimage">
-            <img src="../artgenius/images/artgeniusfoto1.jpg" alt="" srcset="">
-         </div>
-         <div class="areaimage">
-            <img src="../artgenius/images/artgeniusfoto3.jpg" alt="" srcset="">
-         </div>
-         <div class="areaimage">
-            <img src="../artgenius/images/artgeniusfoto4.jpg" alt="" srcset="">
-         </div>
-         
-      </div>
-    </section>
-    <section class="sectioproductgeral">
-      <div class="titleproduct">
-         <h1>FACHADAS</h1>
-      </div>
-      <div class="areaproduct">
-         <div class="areaimage">
-            <img src="../artgenius/images/artgeniusfoto1.jpg" alt="" srcset="">
-         </div>
-         <div class="areaimage">
-            <img src="../artgenius/images/artgeniusfoto3.jpg" alt="" srcset="">
-         </div>
-         <div class="areaimage">
-            <img src="../artgenius/images/artgeniusfoto4.jpg" alt="" srcset="">
-         </div>
-         
-      </div>
-    </section>
-    <section class="sectioproductgeral">
-      <div class="titleproduct">
-         <h1>ENVELOPAMENTO</h1>
-      </div>
-      <div class="areaproduct">
-         <div class="areaimage">
-            <img src="../artgenius/images/artgeniusfoto1.jpg" alt="" srcset="">
-         </div>
-         <div class="areaimage">
-            <img src="../artgenius/images/artgeniusfoto3.jpg" alt="" srcset="">
-         </div>
-         <div class="areaimage">
-            <img src="../artgenius/images/artgeniusfoto4.jpg" alt="" srcset="">
-         </div>
-         
-      </div>
+
+    <section class="productsection">
+        <h2>NOSSO PORTFÓLIO</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+  <button class="btn" onclick="filterSelection('nature')"> painel</button>
+  <button class="btn" onclick="filterSelection('cars')"> wind banner</button>
+  <button class="btn" onclick="filterSelection('people')"> enevelopamento</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="images/artgeniusfoto1.jpg" alt="Mountains" style="width: 100%;">
+      <h4>Mountains</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="images/artgeniusfoto2.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="images/artgeniusfoto4.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
     </section>
 
-
+    
     <footer>
         <div class="container flexcolumn">
             <div class="footermenu">
-                <a href="">
+                <a href="produtos.html">
                 <div class="fmenu1">
-                    <div class="fmenu11">Seguro de saúde</div>
-                    <div class="fmenu111">Aqui na med center nós temos →</div>
+                    <div class="fmenu11">PRODUTOS</div>
+                    <div class="fmenu111">Confira a variedade de produtos que oferecemos para você →</div>
                 </div>
                 </a>
-                <a href="">
+                <a href="trabalhos.html">
                     <div class="fmenu2">
-                        <div class="fmenu11">Registros Médicos</div>
-                        <div class="fmenu111">Aqui na med center nós temos →</div>
+                        <div class="fmenu11">TRABALHOS</div>
+                        <div class="fmenu111">Confira a qualidade De alguns de nossos trabalhos realizados →</div>
                     </div>
                 </a>
                 <a href="">
                     <div class="fmenu3">
-                        <div class="fmenu11">Pagamento de contas online</div>
-                        <div class="fmenu111">Aqui no medicenter temos atendimento individual →</div>
+                        <div class="fmenu11"> CONTATO</div>
+                        <div class="fmenu111">Fale diretamente conosco em nosso whatsapp clicando aqui →</div>
                     </div>
                 </a>
             </div>
             <div class="itemfooter">
                 <div class="areaitemfooter">
                     <div class="widgettitle">
-                        <div class="widgettitletext">Clínica Médica</div>
+                        <div class="widgettitletext">Nosso Endereço</div>
                         <div class="widgettitlebar"></div>                    
                     </div>
                     <div class="resumefooterc1">
-                        mauris aipiscing fringila turpis interdum sed pulvinar nisi malesuada individual.
+                        Ficamos localizados em pleno centro da cidade para melhor te atender.
+                    </div>
+                    <div class="iframemap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.23270290441!2d-37.10001236842914!3d-6.462569970613916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7afeda3ed83d22d%3A0xa2b9bec1fb8e2218!2sR.%20Pedro%20Lucas%20de%20Medeiros%2C%20445%2C%20Caic%C3%B3%20-%20RN%2C%2059300-000!5e0!3m2!1spt-BR!2sbr!4v1665524103547!5m2!1spt-BR!2sbr" width="400px" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     
                     <div class="resumefooter resume2">
                         <div>
-                            <div>Clínica Medicenter</div>
-                            <div>Rua Farlane 33</div>
-                            <div>Keilor Leste</div>
-                            <div>VIC 3033, Austrália</div>
+                            <div>Rua Pedro Lucas de Medeiros</div>
+                            <div>N° - 445</div>
+                            <div>Centro</div>
+                            <div>Caicó/RN CEP: 59300-000</div>
                         </div>
                         <div>
-                            <div>+123 655 655</div>
-                            <div>+123 755 755</div>
-                            <div class="link"><a href="">pedrogino1@hotmail.com</a></div>
+                            <div>84 9.9977-1380</div>
+                            <div class="link"><a href="">artgenius.rn@gmail.com</a></div>
                         </div>
                     </div>
                     <div class="icone">
-                        <a href="1"><div class="ic1"><img src="../medicenter/assets/images/facebook.png" alt="facebook"></div></a>
-                        <a href="2"><div class="ic2"><img src="../medicenter/assets/images/twitter.png" alt="twitter"></div></a>
-                        <a href="3"><div class="ic3"><img src="../medicenter/assets/images/web.png" alt=""></div></a>
-                        <a href="4"><div class="ic4"><img src="../medicenter/assets/images/email.png" alt=""></div></a>
+                        <a href="" target="_blank"><div><img src="images/facebook.png" alt="facebook"></div></a>
+                        <a href="" target="_blank"><div><img src="images/instagram.png" alt="twitter"></div></a>
+                        <a href="" target="_blank"><div><img src="images/telegram.png" alt="telegram"></div></a>
+                        <a href="artgenius.rn@gmail.com" target="_blank"><div><img src="images/e-mail.png" alt="email"></div></a>
                     </div>
                 </div>
                 <div class="areaitemfooter">
                     <div class="areaitemfooter">
                         <div class="widgettitle">
-                            <div class="widgettitletext">Ùltimos posts</div>
+                            <div class="widgettitletext">Parceiros</div>
                             <div class="widgettitlebar"></div>                    
                         </div>
-                        <div class="resumeboxgeral">
-                            <div class="resumeboxtext">
-                                <div>→</div>
-                                <div class="resumebox">
-                                    <a href="" target="_blank">
-                                        <p class="resumetextpost">
-                                        Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada.
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="textblue">
-                                10 years ago
-                            </div>
-                            <div class="resumeboxtext">
-                                <div>→</div>
-                                <div class="resumebox">
-                                    <a href="" target="_blank">
-                                        <p class="resumetextpost">
-                                            Lorem ipsum dolor sit amat velum.
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="textblue">
-                                10 years ago
-                            </div>
-                            <div class="resumeboxtext">
-                                <div>→</div>
-                                <div class="resumebox">
-                                    <a href="" target="_blank">
-                                        <p class="resumetextpost">
-                                        Mauris adipiscing mauris fringilla turpis interdum sed pulvinar nisi malesuada.
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="textblue">
-                                10 years ago
-                            </div>
-                        </div>
+                        <a href="https://pedrinhomotivado1.github.io/peasy/"  target="_blank" class="logopeasyfoot">
+                            <img src="../artgenius/images/logopeasy.png" alt="logo peasy" srcset="">
+                        </a>
                     </div>
                 </div>
-                <div class="areaitemfooter">
-                    <div class="areaitemfooter">
-                        <div class="widgettitle">
-                            <div class="widgettitletext">Ùltimos twites</div>
-                            <div class="widgettitlebar"></div>                    
-                        </div>
-                        <div class="resumeboxgeral">
-                            <div class="resumeboxtext">
-                                <div>→</div>
-                                <div class="resumebox">
-                                    <a href="" target="_blank">
-                                        <p class="resumetextpost">
-                                            Lançamos a nova versão (v2.2) do nosso #ClassiPress #Ajax #Image #Uploader. Verifique em #CodeCanyon t.co/Nd6LOWaqAD
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="textblue">
-                                6 days ago
-                            </div>
-                            <div class="resumeboxtext">
-                                <div>→</div>
-                                <div class="resumebox">
-                                    <a href="" target="_blank">
-                                        <p class="resumetextpost">
-                                            Lançamos a nova versão (v7.0) do nosso #Timetable #Responsive #Booking #Schedule #WP Plugin. Verifique em… t.co/cLQUCpySSF
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="textblue">
-                                Mais ou menos um mês atras
-                            </div>
-                            <div class="resumeboxtext">
-                                <div>→</div>
-                                <div class="resumebox">
-                                        <p class="resumetextpost">
-                                            We've released new version (v6.9) of our #Timetable #Responsive #Booking #Schedule #WP Plugin. Please check at… 
-                                            <a class="link" href="" target="_blank">t.co/KlzG7OsrVE</a>
-                                        </p>
-                                </div>
-                            </div>
-                            <div class="textblue">
-                                2 meses atrás
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div class="footercopy">
-                © Copyright - Pedro Neto sistemas
+                © Copyright - Todos os direitos reservados a Art Genius
             </div>
         </div>
     </footer>
