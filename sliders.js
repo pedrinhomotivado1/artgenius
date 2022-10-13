@@ -39,3 +39,34 @@ function menu() {
      menu.classList.add('opened')
   }
 }
+
+function mousecima() {
+  let buton = document.querySelector('.dropdown')
+  if (buton.classList.contains('dropmenuclosed')=== true) {
+    buton.classList.remove('dropmenuclosed')
+    buton.classList.add('dropmenuopened')      
+  } else {
+     buton.classList.remove('dropmenuopened')
+     menu.classList.add('dropmenuclosed')
+  }
+}
+function mousesai() {
+  let buton = document.querySelector('.dropdown')
+  if (buton.classList.contains('dropmenuopened')=== true) {
+    buton.classList.remove('dropmenuopened')
+    buton.classList.add('dropmenuclosed')      
+  } else {
+     buton.classList.remove('dropmenuopened')
+     menu.classList.add('dropmenuclosed')
+  }
+}
+function clicksubmenu() {
+  let buton = document.querySelector('.dropdown')
+  if (buton.classList.contains('dropmenuclosed')=== true) {
+    buton.classList.remove('dropmenuclosed')
+    buton.classList.add('dropmenuopened')      
+  } else {
+     buton.classList.remove('dropmenuopened')
+     menu.classList.add('dropmenuclosed')
+  }
+}
